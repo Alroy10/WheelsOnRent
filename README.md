@@ -20,7 +20,7 @@ Tools & Languages Used:
 <br>
 Explanation:
 <br>
-database.sql contains all the databases used for both the admin and client sides.
+database.sql contains all the databases creation used for both the admin and client sides.
 <br>
 For admin access:
 <br>
