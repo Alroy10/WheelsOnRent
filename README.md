@@ -5,20 +5,28 @@ enables users to conveniently search for available vehicles based on various fil
 type, location, price, and availability, and allows them to view detailed information about each 
 vehicle before making a booking.
 
-
+<br>
 Tools & Languages Used: 
- 
+ <br>
 • Frontend: HTML, CSS, JavaScript  
+<br>
 • Backend: PHP 
+<br>
 • Database: MySQL
+<br>
 • Development Tool: VS Code, WamoServer
+<br>
 
 
 Explanation:
+<br>
 database.sql contains all the databases used for both the admin and client sides.
-
+<br>
 For admin access:
+<br>
 Open admin_login.php
+<br>
 Username: admin
+<br>
 Password: admin123
 
