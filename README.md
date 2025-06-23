@@ -14,7 +14,7 @@ Tools & Languages Used:
 <br>
 • Database: MySQL
 <br>
-• Development Tool: VS Code, WamoServer
+• Development Tool: VS Code, WampServer
 <br>
 
 <br>
