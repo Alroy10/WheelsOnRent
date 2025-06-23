@@ -17,7 +17,7 @@ Tools & Languages Used:
 • Development Tool: VS Code, WamoServer
 <br>
 
-
+<br>
 Explanation:
 <br>
 database.sql contains all the databases used for both the admin and client sides.
