@@ -24,9 +24,9 @@ database.sql contains all the databases creation used for both the admin and cli
 <br>
 For admin access:
 <br>
-Open admin_login.php
+    Open admin_login.php
 <br>
-Username: admin
+    Username: admin
 <br>
-Password: admin123
+    Password: admin123
 
