@@ -1,0 +1,358 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 50%, #e0e7ff 100%);
+    color: #333;
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+}
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #ffca28;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo h1 {
+    color: #1a1a2e;
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background: linear-gradient(90deg, #ffca28, #ffb300);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-link {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffca28;
+}
+
+/* Main Content */
+main {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.payment-container {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    background: rgba(255, 255, 255, 0.98);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+}
+
+/* User Details Section */
+.user-details, .vehicle-summary, .payment-methods {
+    flex: 1;
+    min-width: 300px;
+}
+
+.user-details h2, .vehicle-summary h2, .payment-methods h2 {
+    color: #1a1a2e;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 500;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #f9f9f9;
+    font-size: 1rem;
+    color: #333;
+    transition: border-color 0.3s ease;
+    resize: vertical;
+}
+
+.form-group textarea:focus {
+    border-color: #ffca28;
+    background: #fff;
+    outline: none;
+}
+
+.form-group input[type="file"] {
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px dashed #ddd;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.form-group small {
+    display: block;
+    color: #666;
+    margin-top: 5px;
+    font-size: 0.85rem;
+}
+
+.form-group input:focus, .form-group select:focus {
+    border-color: #ffca28;
+    background: #fff;
+    outline: none;
+}
+
+.custom-select {
+    appearance: none;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23333' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E") no-repeat right 15px center;
+    background-size: 12px;
+}
+
+/* Vehicle Summary Section */
+.vehicle-info {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+}
+
+.vehicle-info img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.vehicle-info .details p {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.vehicle-info .details strong {
+    color: #1a1a2e;
+}
+
+/* Payment Methods Section */
+.payment-options {
+    margin-bottom: 20px;
+}
+
+.payment-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.payment-option input[type="radio"] {
+    accent-color: #ffca28;
+}
+
+.payment-option label {
+    font-size: 1rem;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.payment-option i {
+    color: #ffca28;
+    font-size: 1.2rem;
+}
+
+.payment-details-form {
+    margin-bottom: 20px;
+}
+
+.inline-group {
+    display: flex;
+    gap: 20px;
+}
+
+.inline-group div {
+    flex: 1;
+}
+
+.pay-btn {
+    width: 100%;
+    padding: 15px;
+    background: #ffca28;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #1a1a2e;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.pay-btn:hover {
+    background: #ffb300;
+    transform: translateY(-2px);
+}
+/* pop up message */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.popup-content h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.popup-content p {
+    color: #666;
+    margin: 10px 0;
+}
+
+.ok-button {
+    background: #ffa500;
+    color: white;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 25px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.ok-button:hover {
+    background: #ff8c00;
+}
+/* Footer (Reused from search-results.css) */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #1a1a2e;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    border-top: 2px solid #ffca28;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .payment-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .vehicle-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .inline-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+/* Profile Dropdown */
+
+.profile-dropdown {
+    position: relative;
+    cursor: pointer;
+}
+
+.profile-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    z-index: 1000;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #f5f5f5;
+}
+
+.profile-dropdown:hover .dropdown-content {
+    display: block;
+}
+.signout-link {
+    color: #ff0000 !important;
+    font-weight: 500;
+}
+
+.signout-link:hover {
+    color: #cc0000 !important;
+}
