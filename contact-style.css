@@ -1,0 +1,311 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f8f9fa;
+    color: #333;
+}
+
+/* Contact Page */
+.contact-page {
+    padding: 80px 50px;
+    background: #fff;
+    min-height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    gap: 30px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Contact Information (Left) */
+.contact-info {
+    flex: 1;
+    background: #1a1a2e;
+    color: white;
+    padding: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-info h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.contact-info .info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1rem;
+}
+
+.contact-info .info-item i {
+    font-size: 1.2rem;
+}
+
+.contact-info .social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: auto;
+}
+
+.contact-info .social-icons a {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.contact-info .social-icons a:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Contact Form (Right) */
+.contact-form {
+    flex: 2;
+    padding: 40px;
+    background: #fff;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-group {
+    flex: 1;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    color: #1a1a2e;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #1a1a2e;
+    outline: none;
+}
+
+.form-group textarea {
+    resize: none;
+}
+
+.send-btn {
+    background: #ff5733; /* Red button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    align-self: flex-end;
+}
+
+.send-btn:hover {
+    background: #e04e2b; /* Slightly darker red on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-info,
+    .contact-form {
+        padding: 30px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+/* Header Styles */
+header {
+    background: #ffffff;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    border-bottom: 3px solid #FFD700;  /* Adding yellow underline to full header */
+}
+
+.logo h1 {
+    color: #FFD700; /* Yellow color for WheelsOnRent */
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-link {
+    color: #1a1a2e;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: #ffca28;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #ffca28;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+.profile-dropdown {
+    position: relative;
+    cursor: pointer;
+}
+
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background: #ffffff;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #f5f5f5;
+}
+
+.profile-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Updated Footer Styles */
+footer {
+    background: #1a1a2e;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: -100px; /* Initially hide footer below viewport */
+    width: 100%;
+    transition: bottom 0.3s ease;
+    z-index: 99;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Add this to your existing script section in contact.php */
+/* Adjust main content to account for fixed footer */
+body {
+    margin: 0;
+    padding-bottom: 50px; /* Height of footer */
+    min-height: 90vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Ensure contact page content doesn't get hidden behind footer */
+.contact-page {
+    margin-bottom: 70px;
+}
+
+.signout-link {
+    color: #ff0000 !important;
+    font-weight: 500;
+}
+
+.signout-link:hover {
+    color: #cc0000 !important;
+}
