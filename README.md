@@ -52,10 +52,10 @@ It empowers users to browse, book, and manage vehicle rentals effortlessly, whil
 
 ## 📐 System Architecture
 
-- Client Side: Built with HTML/CSS/JavaScript
-- Server Side: PHP for server-side scripting
-- Database: MySQL for persistent data storage
-- Architecture: Standard Client-Server model
+- **Client Side:** Built with HTML/CSS/JavaScript
+- **Server Side:** PHP for server-side scripting
+- **Database:** MySQL for persistent data storage
+- **Architecture:** Standard Client-Server model
 
 ---
 
@@ -93,8 +93,8 @@ It empowers users to browse, book, and manage vehicle rentals effortlessly, whil
    cd wheelsonrent
 2. Set up XAMPP or any local server with PHP & MySQL.
 3. Import the database:
-  > Open phpMyAdmin
-  > Create a new database wheelsonrent
-  > Import the .sql file provided in /database folder
+  - Open phpMyAdmin
+  - Create a new database wheelsonrent
+  - Import the .sql file provided in /database folder
 4. Start Apache and MySQL from XAMPP.
 5. Access the app
